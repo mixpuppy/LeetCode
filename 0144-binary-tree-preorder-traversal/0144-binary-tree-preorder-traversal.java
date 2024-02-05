@@ -20,7 +20,7 @@ class Solution {
         List<Integer> list = new ArrayList<>();
         TreeNode current = root;
 
-        if(root == null) return list;
+        if(root == null) return list; 
         addList(current, list);
         return list;
     }
@@ -29,5 +29,6 @@ class Solution {
         list.add(current.val);
         addList(current.left, list);
         addList(current.right, list);
+        
     }
 }
